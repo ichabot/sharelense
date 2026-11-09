@@ -19,6 +19,17 @@ Ergebnis ist ein HTML-Bericht zum Durchklicken (Suche, Spaltenfilter, Sortierung
 
 ## Schnellstart
 
+Ohne Installation, direkt in die laufende Sitzung (lädt `dist/ShareLens.ps1` in den Speicher):
+
+```powershell
+[Net.ServicePointManager]::SecurityProtocol = 'Tls12'; irm https://raw.githubusercontent.com/ichabot/ShareLens/main/dist/ShareLens.ps1 | iex
+```
+
+Danach stehen alle Befehle zur Verfügung, z. B. `Invoke-SLFileServerReport -AllDomainNamespaces -OutputPath C:\Reports`.
+Die Einzeldatei wird mit `tools/Build-SingleFile.ps1` aus dem Modulordner erzeugt.
+
+Klassisch als Modul:
+
 ```powershell
 # Modul laden (Ordner ShareLens\ aus diesem Repo)
 Import-Module .\ShareLens\ShareLens.psd1

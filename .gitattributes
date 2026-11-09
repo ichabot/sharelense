@@ -1,3 +1,4 @@
 *.ps1 text eol=crlf
+dist/ShareLens.ps1 -text
 *.psm1 text eol=crlf
 *.psd1 text eol=crlf
