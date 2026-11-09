@@ -18,8 +18,8 @@
     PrivateData          = @{
         PSData = @{
             Tags         = @('FileServer', 'NTFS', 'Permissions', 'SMB', 'Share', 'DFS', 'DFSN', 'ActiveDirectory', 'Audit', 'Windows')
-            LicenseUri   = 'https://github.com/ichabot/ShareLens/blob/main/LICENSE'
-            ProjectUri   = 'https://github.com/ichabot/ShareLens'
+            LicenseUri   = 'https://github.com/ichabot/sharelense/blob/main/LICENSE'
+            ProjectUri   = 'https://github.com/ichabot/sharelense'
             ReleaseNotes = 'Erste Version: DFS-Mapping, Freigabe-Inventar, NTFS-Grenzordner-Scan, Gruppenauflösung, Matrix, Befunde, HTML/CSV/XLSX/JSON, Vergleich.'
         }
     }

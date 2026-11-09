@@ -1,5 +1,5 @@
 ﻿# ShareLens 0.1.0 – Einzeldatei-Build (generiert von tools/Build-SingleFile.ps1, nicht bearbeiten)
-# Laden:  irm https://raw.githubusercontent.com/ichabot/ShareLens/main/dist/ShareLens.ps1 | iex
+# Laden:  irm https://raw.githubusercontent.com/ichabot/sharelense/main/dist/ShareLens.ps1 | iex
 if (Get-Module ShareLens) { Remove-Module ShareLens -Force }
 New-Module -Name ShareLens -ScriptBlock {
 $script:SLVersion = '0.1.0'

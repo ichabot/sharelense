@@ -13,7 +13,7 @@ $exports = [regex]::Matches(($psm1 -split 'Export-ModuleMember')[1], "'([A-Za-z-
 
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("# ShareLens $version – Einzeldatei-Build (generiert von tools/Build-SingleFile.ps1, nicht bearbeiten)")
-[void]$sb.AppendLine('# Laden:  irm https://raw.githubusercontent.com/ichabot/ShareLens/main/dist/ShareLens.ps1 | iex')
+[void]$sb.AppendLine('# Laden:  irm https://raw.githubusercontent.com/ichabot/sharelense/main/dist/ShareLens.ps1 | iex')
 [void]$sb.AppendLine('if (Get-Module ShareLens) { Remove-Module ShareLens -Force }')
 [void]$sb.AppendLine('New-Module -Name ShareLens -ScriptBlock {')
 [void]$sb.AppendLine("`$script:SLVersion = '$version'")
