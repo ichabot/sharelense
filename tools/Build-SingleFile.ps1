@@ -28,5 +28,5 @@ foreach ($folder in 'Private', 'Public') {
 [void]$sb.AppendLine("Write-Host 'ShareLens $version geladen. Start: Invoke-SLFileServerReport -AllDomainNamespaces -OutputPath C:\Reports' -ForegroundColor Cyan")
 
 $out = Join-Path $dist 'ShareLens.ps1'
-[System.IO.File]::WriteAllText($out, $sb.ToString(), (New-Object System.Text.UTF8Encoding($true)))
+[System.IO.File]::WriteAllText($out, $sb.ToString(), (New-Object System.Text.UTF8Encoding($false)))
 Get-Item $out

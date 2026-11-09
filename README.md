@@ -37,7 +37,7 @@ Im Ordner `C:\Reports` liegt danach `ShareLens_<Datum>.html` – im Browser öff
 > ```
 
 **Ohne Internet auf dem Zielsystem:** `dist/ShareLens.ps1` herunterladen, hinüberkopieren und laden mit
-`Get-Content .\ShareLens.ps1 -Raw | iex`
+`Get-Content .\ShareLens.ps1 -Raw -Encoding UTF8 | iex`
 
 **Dauerhaft als Modul:** Repo klonen bzw. ZIP entpacken, dann `Import-Module .\ShareLens\ShareLens.psd1`
 (oder den Ordner `ShareLens` nach `Documents\WindowsPowerShell\Modules` kopieren).
